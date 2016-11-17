@@ -3,42 +3,99 @@
 body{
 	margin:0;
 	min-width: 320px;
+	color:$color;
+	background: $background;
 }
 
 section{
 	position: relative;
 }
 
-
-ul{
-	padding: 0;
-	margin: 0;
-	li{
-		float: left;
-		list-style: none;
-	}
-}
-
 ul, ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+	margin: 0;
 }
 
 h2{
-
+	font-family: Nunito;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 38px;
+	text-align: center;
+	@media(max-width:1150px){
+		font-size: 25px;
+	}
 }
 
 h3{
-
+	font-family: Yantramanav;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 p{
+	font-family: Yantramanav;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 24px;
+	@media(max-width:1150px){
+		font-size:14px;
+		line-height: 18px;
+	}
+	@media(max-width:767px){
+		font-size:12px;
+		line-height: 14px;
+	}
+}
 
+.quote{
+	font-family: Yantramanav;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+	padding: 120px 0 100px 0;
+	@media(max-width:1150px){
+		font-size:16px;
+		line-height: 20px;
+	}
+	&:before{
+		content:open-quote;
+		color: gainsboro;
+		font-family: Nunito;
+		font-size: 72px;
+		font-weight: 300;
+		line-height: 38px;
+		position: absolute;
+		top:80px;
+		left:0;
+	}
+		&:after{
+		content:close-quote;
+		color: gainsboro;
+		font-family: Nunito;
+		font-size: 72px;
+		font-weight: 300;
+		line-height: 38px;
+		position: absolute;
+		bottom:40px;
+		right:0;
+	}
+}
+
+.author, .descr{
+	font-family: Yantramanav;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 26px;
+	text-align: center;
 }
 
 a{
@@ -65,6 +122,10 @@ a{
 .img-responsive{
 	width:100%;
 	height: auto;
+}
+
+.item{
+	padding:0;
 }
 
 button, 

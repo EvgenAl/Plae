@@ -1,0 +1,257 @@
+.review{
+	.wrapper{
+		background: #fff;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		.item{
+			width: 50%;
+			@media(max-width:650px){
+				width: 100%;
+				p{
+					font-size:18px;
+					line-height: 25px;
+				}
+			}
+		}
+		.item_1, .item_4, .item_5{
+			padding: 0 100px;
+			@media(max-width:1150px){
+				padding: 0 20px;
+			}
+			@media(max-width:650px){
+				padding:80px 30px;
+			}
+		}
+		.item_1{
+			@media(max-width:650px){
+				-webkit-order:1;
+				-ms-flex-order:1;
+				order:1;
+			}
+		}
+
+		.item_2{
+			@media(max-width:650px){
+				-webkit-order:2;
+				-ms-flex-order:2;
+				order:2;
+			}
+		}
+
+		.item_3{
+			@media(max-width:650px){
+				-webkit-order:4;
+				-ms-flex-order:4;
+				order:4;
+			}
+		}
+
+		.item_4{
+			@media(max-width:650px){
+				-webkit-order:3;
+				-ms-flex-order:3;
+				order:3;
+			}
+		}
+
+		.item_5{
+			@media(max-width:650px){
+				-webkit-order:5;
+				-ms-flex-order:5;
+				order:5;
+			}
+		}
+		.item_6{
+			@media(max-width:650px){
+				-webkit-order:6;
+				-ms-flex-order:6;
+				order:6;
+			}
+		}
+	}
+}
+
+.the_range{
+	.wrapper{
+		background: #fff;
+		padding: 80px 0;
+		.carousel{
+			margin-top: 80px;
+		}
+		.carousel-inner{
+			overflow:visible;
+		}
+		.carousel-control{
+			background: transparent;
+		}
+		.left{
+			top:120px;
+			left:50px;
+			@media(max-width:991px){
+				left:0;
+			}
+			@media(max-width:767px){
+				top:80px;
+			}
+			@media(max-width:550px){
+				top:60px;
+			}
+
+		}
+		.right{
+			top:120px;
+			right:50px;
+			@media(max-width:991px){
+				right:0;
+			}
+			@media(max-width:767px){
+				top:80px;
+			}
+			@media(max-width:550px){
+				top:60px;
+			}
+		}
+		.item{
+			position: relative;
+			text-align: center;
+			height: 470px;
+			padding-bottom: 200px;
+			@media(max-width:991px){
+				height: 430px;
+			}
+			@media(max-width:767px){
+				height:380px;
+			}
+			img{
+				display: inline-block;
+				@media(max-width:991px){
+					width:50%;
+				}
+				@media(max-width:450px){
+					width:70%;
+				}
+			}
+			.carousel-caption{
+				text-shadow: none;
+				color:#000;
+				@media(max-width:550px){
+					padding-top: 0;
+					bottom:70px;
+				}
+				.model{
+					text-transform: uppercase;
+					font-family: Nunito;
+					font-size: 24px;
+					font-weight: 300;
+					line-height: 38px;
+				}
+				.slide_number{
+					margin-top: 0;
+					font-family: Yantramanav;
+					font-size: 18px;
+					font-weight: 100;
+					line-height: 20px;
+				}
+			}
+		}
+		.item.item_4{
+			.carousel-caption{
+				bottom:-100px;
+				@media(max-width:550px){
+					bottom:-50px;
+				}
+			}
+			
+		}
+		.item.item_5{
+			.carousel-caption{
+				bottom:-60px;	
+				@media(max-width:550px){
+					bottom:0px;
+				}
+			}
+
+		}
+	}
+
+}
+
+.address{
+	.wrapper{
+		padding-top: 100px;
+		padding-bottom: 80px;
+		background: #fff;
+		.content{
+			font-family: Yantramanav;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			.item{
+				width: 18%;
+				padding: 60px 20px 0 20px;
+				@media(max-width:991px){
+					width: 30%;
+				}
+				@media(max-width:550px){
+					width: 48%;
+				}
+				@media(max-width:350px){
+					width: 100%;
+					text-align: center;
+				}
+			}
+			.bold{
+				color: black;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+			address{
+				color: black;
+				font-size: 15px;
+				font-weight: 100;
+				line-height: 22px;
+				font-style:normal;
+			}
+		}
+		.site{
+			color: #1faa50;
+			font-size: 15px;
+			font-weight: 100;
+			line-height: 30px;
+		}
+		h3{
+			text-align: center;
+			font-family: Nunito;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 38px;
+			padding-top: 85px;
+		}
+		.descr{
+			margin-bottom: 50px;
+		}
+		.tel, .mail{
+			display: block;
+			text-align: center;
+		}
+		.tel{
+			
+			line-height: 30px;
+			margin: 0;
+		}
+	}
+}
