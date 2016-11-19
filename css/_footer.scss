@@ -1,0 +1,23 @@
+.sign_up{
+	.wrapper{
+		padding: 140px 30px 100px 30px;
+		background: #f3f3f3;
+	}
+}
+.footer_bottom{
+	.wrapper{
+		background: #dcdcdc;
+		.copy{
+			color: white;
+			font-family: Yantramanav;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 40px;
+			padding-left: 50px;
+			margin: 0;
+			@media(max-width:380px){
+				padding-left: 10px;
+			}
+		}
+	}
+}

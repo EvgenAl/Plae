@@ -183,6 +183,48 @@
 
 }
 
+
+.why_plae{
+	.wrapper{
+		background: url(../i/plae_bg.png) no-repeat;
+		background-size: cover;
+		background-position: -20px 0;
+		padding: 75px 10px 30px 30px;
+		@media(max-width:1199px){
+			background: #e1e0e1 url(../i/plae_bg_1.png) no-repeat;
+			background-position: 0 75px;
+		}
+		@media(max-width:991px){
+			background:url(../i/plae_bg_2.png) no-repeat;
+			background-position: 0 0;
+			background-size:cover;
+		}
+		.sidebar{
+			margin-bottom: 15px;
+			@media(max-width:420px){
+				width: 100%;
+			}
+		}
+		.item{
+			margin-top: 10px;
+		}
+		.alert{
+			background: #fff;
+			padding: 10px;
+			border-radius: 10px;
+			p{
+				margin: 0;
+				font-size: 15px;
+				font-weight: 100;
+				line-height: 22px;
+				@media(max-width:1199px){
+					font-size: 12px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+}
 .address{
 	.wrapper{
 		padding-top: 100px;
@@ -248,8 +290,7 @@
 			display: block;
 			text-align: center;
 		}
-		.tel{
-			
+		.tel{		
 			line-height: 30px;
 			margin: 0;
 		}
