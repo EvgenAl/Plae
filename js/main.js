@@ -11,6 +11,11 @@
 //= bootstrap/bootstrap.js
 
 
+/* typed
+===========================*/
+
+//= typed/typed.js
+
 
 
 /* Custom
